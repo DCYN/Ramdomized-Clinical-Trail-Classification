@@ -1,0 +1,1790 @@
+{
+  "nodes": [
+    {
+      "op": "null", 
+      "name": "data", 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "convolution19_weight", 
+      "attrs": {
+        "kernel": "(3, 3)", 
+        "num_filter": "96", 
+        "pad": "(1, 1)", 
+        "stride": "(1, 1)", 
+        "workspace": "256"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "convolution19_bias", 
+      "attrs": {
+        "kernel": "(3, 3)", 
+        "num_filter": "96", 
+        "pad": "(1, 1)", 
+        "stride": "(1, 1)", 
+        "workspace": "256"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "Convolution", 
+      "name": "convolution19", 
+      "attrs": {
+        "kernel": "(3, 3)", 
+        "num_filter": "96", 
+        "pad": "(1, 1)", 
+        "stride": "(1, 1)", 
+        "workspace": "256"
+      }, 
+      "inputs": [[0, 0, 0], [1, 0, 0], [2, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "batchnorm19_gamma", 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "batchnorm19_beta", 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "batchnorm19_moving_mean", 
+      "attrs": {"__init__": "[\"zero\", {}]"}, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "batchnorm19_moving_var", 
+      "attrs": {"__init__": "[\"one\", {}]"}, 
+      "inputs": []
+    }, 
+    {
+      "op": "BatchNorm", 
+      "name": "batchnorm19", 
+      "inputs": [[3, 0, 0], [4, 0, 0], [5, 0, 0], [6, 0, 1], [7, 0, 1]]
+    }, 
+    {
+      "op": "Activation", 
+      "name": "activation19", 
+      "attrs": {"act_type": "relu"}, 
+      "inputs": [[8, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "convolution20_weight", 
+      "attrs": {
+        "kernel": "(1, 1)", 
+        "num_filter": "32", 
+        "pad": "(0, 0)", 
+        "stride": "(1, 1)", 
+        "workspace": "256"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "convolution20_bias", 
+      "attrs": {
+        "kernel": "(1, 1)", 
+        "num_filter": "32", 
+        "pad": "(0, 0)", 
+        "stride": "(1, 1)", 
+        "workspace": "256"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "Convolution", 
+      "name": "convolution20", 
+      "attrs": {
+        "kernel": "(1, 1)", 
+        "num_filter": "32", 
+        "pad": "(0, 0)", 
+        "stride": "(1, 1)", 
+        "workspace": "256"
+      }, 
+      "inputs": [[9, 0, 0], [10, 0, 0], [11, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "batchnorm20_gamma", 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "batchnorm20_beta", 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "batchnorm20_moving_mean", 
+      "attrs": {"__init__": "[\"zero\", {}]"}, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "batchnorm20_moving_var", 
+      "attrs": {"__init__": "[\"one\", {}]"}, 
+      "inputs": []
+    }, 
+    {
+      "op": "BatchNorm", 
+      "name": "batchnorm20", 
+      "inputs": [[12, 0, 0], [13, 0, 0], [14, 0, 0], [15, 0, 1], [16, 0, 1]]
+    }, 
+    {
+      "op": "Activation", 
+      "name": "activation20", 
+      "attrs": {"act_type": "relu"}, 
+      "inputs": [[17, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "convolution21_weight", 
+      "attrs": {
+        "kernel": "(3, 3)", 
+        "num_filter": "32", 
+        "pad": "(1, 1)", 
+        "stride": "(1, 1)", 
+        "workspace": "256"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "convolution21_bias", 
+      "attrs": {
+        "kernel": "(3, 3)", 
+        "num_filter": "32", 
+        "pad": "(1, 1)", 
+        "stride": "(1, 1)", 
+        "workspace": "256"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "Convolution", 
+      "name": "convolution21", 
+      "attrs": {
+        "kernel": "(3, 3)", 
+        "num_filter": "32", 
+        "pad": "(1, 1)", 
+        "stride": "(1, 1)", 
+        "workspace": "256"
+      }, 
+      "inputs": [[9, 0, 0], [19, 0, 0], [20, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "batchnorm21_gamma", 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "batchnorm21_beta", 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "batchnorm21_moving_mean", 
+      "attrs": {"__init__": "[\"zero\", {}]"}, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "batchnorm21_moving_var", 
+      "attrs": {"__init__": "[\"one\", {}]"}, 
+      "inputs": []
+    }, 
+    {
+      "op": "BatchNorm", 
+      "name": "batchnorm21", 
+      "inputs": [[21, 0, 0], [22, 0, 0], [23, 0, 0], [24, 0, 1], [25, 0, 1]]
+    }, 
+    {
+      "op": "Activation", 
+      "name": "activation21", 
+      "attrs": {"act_type": "relu"}, 
+      "inputs": [[26, 0, 0]]
+    }, 
+    {
+      "op": "Concat", 
+      "name": "concat10", 
+      "attrs": {"num_args": "2"}, 
+      "inputs": [[18, 0, 0], [27, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "convolution22_weight", 
+      "attrs": {
+        "kernel": "(1, 1)", 
+        "num_filter": "32", 
+        "pad": "(0, 0)", 
+        "stride": "(1, 1)", 
+        "workspace": "256"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "convolution22_bias", 
+      "attrs": {
+        "kernel": "(1, 1)", 
+        "num_filter": "32", 
+        "pad": "(0, 0)", 
+        "stride": "(1, 1)", 
+        "workspace": "256"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "Convolution", 
+      "name": "convolution22", 
+      "attrs": {
+        "kernel": "(1, 1)", 
+        "num_filter": "32", 
+        "pad": "(0, 0)", 
+        "stride": "(1, 1)", 
+        "workspace": "256"
+      }, 
+      "inputs": [[28, 0, 0], [29, 0, 0], [30, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "batchnorm22_gamma", 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "batchnorm22_beta", 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "batchnorm22_moving_mean", 
+      "attrs": {"__init__": "[\"zero\", {}]"}, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "batchnorm22_moving_var", 
+      "attrs": {"__init__": "[\"one\", {}]"}, 
+      "inputs": []
+    }, 
+    {
+      "op": "BatchNorm", 
+      "name": "batchnorm22", 
+      "inputs": [[31, 0, 0], [32, 0, 0], [33, 0, 0], [34, 0, 1], [35, 0, 1]]
+    }, 
+    {
+      "op": "Activation", 
+      "name": "activation22", 
+      "attrs": {"act_type": "relu"}, 
+      "inputs": [[36, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "convolution23_weight", 
+      "attrs": {
+        "kernel": "(3, 3)", 
+        "num_filter": "48", 
+        "pad": "(1, 1)", 
+        "stride": "(1, 1)", 
+        "workspace": "256"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "convolution23_bias", 
+      "attrs": {
+        "kernel": "(3, 3)", 
+        "num_filter": "48", 
+        "pad": "(1, 1)", 
+        "stride": "(1, 1)", 
+        "workspace": "256"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "Convolution", 
+      "name": "convolution23", 
+      "attrs": {
+        "kernel": "(3, 3)", 
+        "num_filter": "48", 
+        "pad": "(1, 1)", 
+        "stride": "(1, 1)", 
+        "workspace": "256"
+      }, 
+      "inputs": [[28, 0, 0], [38, 0, 0], [39, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "batchnorm23_gamma", 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "batchnorm23_beta", 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "batchnorm23_moving_mean", 
+      "attrs": {"__init__": "[\"zero\", {}]"}, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "batchnorm23_moving_var", 
+      "attrs": {"__init__": "[\"one\", {}]"}, 
+      "inputs": []
+    }, 
+    {
+      "op": "BatchNorm", 
+      "name": "batchnorm23", 
+      "inputs": [[40, 0, 0], [41, 0, 0], [42, 0, 0], [43, 0, 1], [44, 0, 1]]
+    }, 
+    {
+      "op": "Activation", 
+      "name": "activation23", 
+      "attrs": {"act_type": "relu"}, 
+      "inputs": [[45, 0, 0]]
+    }, 
+    {
+      "op": "Concat", 
+      "name": "concat11", 
+      "attrs": {"num_args": "2"}, 
+      "inputs": [[37, 0, 0], [46, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "convolution24_weight", 
+      "attrs": {
+        "kernel": "(3, 3)", 
+        "num_filter": "80", 
+        "pad": "(1, 1)", 
+        "stride": "(2, 2)", 
+        "workspace": "256"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "convolution24_bias", 
+      "attrs": {
+        "kernel": "(3, 3)", 
+        "num_filter": "80", 
+        "pad": "(1, 1)", 
+        "stride": "(2, 2)", 
+        "workspace": "256"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "Convolution", 
+      "name": "convolution24", 
+      "attrs": {
+        "kernel": "(3, 3)", 
+        "num_filter": "80", 
+        "pad": "(1, 1)", 
+        "stride": "(2, 2)", 
+        "workspace": "256"
+      }, 
+      "inputs": [[47, 0, 0], [48, 0, 0], [49, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "batchnorm24_gamma", 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "batchnorm24_beta", 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "batchnorm24_moving_mean", 
+      "attrs": {"__init__": "[\"zero\", {}]"}, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "batchnorm24_moving_var", 
+      "attrs": {"__init__": "[\"one\", {}]"}, 
+      "inputs": []
+    }, 
+    {
+      "op": "BatchNorm", 
+      "name": "batchnorm24", 
+      "inputs": [[50, 0, 0], [51, 0, 0], [52, 0, 0], [53, 0, 1], [54, 0, 1]]
+    }, 
+    {
+      "op": "Activation", 
+      "name": "activation24", 
+      "attrs": {"act_type": "relu"}, 
+      "inputs": [[55, 0, 0]]
+    }, 
+    {
+      "op": "Pooling", 
+      "name": "pooling2", 
+      "attrs": {
+        "kernel": "(3, 3)", 
+        "pad": "(1, 1)", 
+        "pool_type": "max", 
+        "stride": "(2, 2)"
+      }, 
+      "inputs": [[47, 0, 0]]
+    }, 
+    {
+      "op": "Concat", 
+      "name": "concat12", 
+      "attrs": {"num_args": "2"}, 
+      "inputs": [[56, 0, 0], [57, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "convolution25_weight", 
+      "attrs": {
+        "kernel": "(1, 1)", 
+        "num_filter": "112", 
+        "pad": "(0, 0)", 
+        "stride": "(1, 1)", 
+        "workspace": "256"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "convolution25_bias", 
+      "attrs": {
+        "kernel": "(1, 1)", 
+        "num_filter": "112", 
+        "pad": "(0, 0)", 
+        "stride": "(1, 1)", 
+        "workspace": "256"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "Convolution", 
+      "name": "convolution25", 
+      "attrs": {
+        "kernel": "(1, 1)", 
+        "num_filter": "112", 
+        "pad": "(0, 0)", 
+        "stride": "(1, 1)", 
+        "workspace": "256"
+      }, 
+      "inputs": [[58, 0, 0], [59, 0, 0], [60, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "batchnorm25_gamma", 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "batchnorm25_beta", 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "batchnorm25_moving_mean", 
+      "attrs": {"__init__": "[\"zero\", {}]"}, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "batchnorm25_moving_var", 
+      "attrs": {"__init__": "[\"one\", {}]"}, 
+      "inputs": []
+    }, 
+    {
+      "op": "BatchNorm", 
+      "name": "batchnorm25", 
+      "inputs": [[61, 0, 0], [62, 0, 0], [63, 0, 0], [64, 0, 1], [65, 0, 1]]
+    }, 
+    {
+      "op": "Activation", 
+      "name": "activation25", 
+      "attrs": {"act_type": "relu"}, 
+      "inputs": [[66, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "convolution26_weight", 
+      "attrs": {
+        "kernel": "(3, 3)", 
+        "num_filter": "48", 
+        "pad": "(1, 1)", 
+        "stride": "(1, 1)", 
+        "workspace": "256"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "convolution26_bias", 
+      "attrs": {
+        "kernel": "(3, 3)", 
+        "num_filter": "48", 
+        "pad": "(1, 1)", 
+        "stride": "(1, 1)", 
+        "workspace": "256"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "Convolution", 
+      "name": "convolution26", 
+      "attrs": {
+        "kernel": "(3, 3)", 
+        "num_filter": "48", 
+        "pad": "(1, 1)", 
+        "stride": "(1, 1)", 
+        "workspace": "256"
+      }, 
+      "inputs": [[58, 0, 0], [68, 0, 0], [69, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "batchnorm26_gamma", 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "batchnorm26_beta", 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "batchnorm26_moving_mean", 
+      "attrs": {"__init__": "[\"zero\", {}]"}, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "batchnorm26_moving_var", 
+      "attrs": {"__init__": "[\"one\", {}]"}, 
+      "inputs": []
+    }, 
+    {
+      "op": "BatchNorm", 
+      "name": "batchnorm26", 
+      "inputs": [[70, 0, 0], [71, 0, 0], [72, 0, 0], [73, 0, 1], [74, 0, 1]]
+    }, 
+    {
+      "op": "Activation", 
+      "name": "activation26", 
+      "attrs": {"act_type": "relu"}, 
+      "inputs": [[75, 0, 0]]
+    }, 
+    {
+      "op": "Concat", 
+      "name": "concat13", 
+      "attrs": {"num_args": "2"}, 
+      "inputs": [[67, 0, 0], [76, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "convolution27_weight", 
+      "attrs": {
+        "kernel": "(1, 1)", 
+        "num_filter": "96", 
+        "pad": "(0, 0)", 
+        "stride": "(1, 1)", 
+        "workspace": "256"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "convolution27_bias", 
+      "attrs": {
+        "kernel": "(1, 1)", 
+        "num_filter": "96", 
+        "pad": "(0, 0)", 
+        "stride": "(1, 1)", 
+        "workspace": "256"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "Convolution", 
+      "name": "convolution27", 
+      "attrs": {
+        "kernel": "(1, 1)", 
+        "num_filter": "96", 
+        "pad": "(0, 0)", 
+        "stride": "(1, 1)", 
+        "workspace": "256"
+      }, 
+      "inputs": [[77, 0, 0], [78, 0, 0], [79, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "batchnorm27_gamma", 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "batchnorm27_beta", 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "batchnorm27_moving_mean", 
+      "attrs": {"__init__": "[\"zero\", {}]"}, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "batchnorm27_moving_var", 
+      "attrs": {"__init__": "[\"one\", {}]"}, 
+      "inputs": []
+    }, 
+    {
+      "op": "BatchNorm", 
+      "name": "batchnorm27", 
+      "inputs": [[80, 0, 0], [81, 0, 0], [82, 0, 0], [83, 0, 1], [84, 0, 1]]
+    }, 
+    {
+      "op": "Activation", 
+      "name": "activation27", 
+      "attrs": {"act_type": "relu"}, 
+      "inputs": [[85, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "convolution28_weight", 
+      "attrs": {
+        "kernel": "(3, 3)", 
+        "num_filter": "64", 
+        "pad": "(1, 1)", 
+        "stride": "(1, 1)", 
+        "workspace": "256"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "convolution28_bias", 
+      "attrs": {
+        "kernel": "(3, 3)", 
+        "num_filter": "64", 
+        "pad": "(1, 1)", 
+        "stride": "(1, 1)", 
+        "workspace": "256"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "Convolution", 
+      "name": "convolution28", 
+      "attrs": {
+        "kernel": "(3, 3)", 
+        "num_filter": "64", 
+        "pad": "(1, 1)", 
+        "stride": "(1, 1)", 
+        "workspace": "256"
+      }, 
+      "inputs": [[77, 0, 0], [87, 0, 0], [88, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "batchnorm28_gamma", 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "batchnorm28_beta", 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "batchnorm28_moving_mean", 
+      "attrs": {"__init__": "[\"zero\", {}]"}, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "batchnorm28_moving_var", 
+      "attrs": {"__init__": "[\"one\", {}]"}, 
+      "inputs": []
+    }, 
+    {
+      "op": "BatchNorm", 
+      "name": "batchnorm28", 
+      "inputs": [[89, 0, 0], [90, 0, 0], [91, 0, 0], [92, 0, 1], [93, 0, 1]]
+    }, 
+    {
+      "op": "Activation", 
+      "name": "activation28", 
+      "attrs": {"act_type": "relu"}, 
+      "inputs": [[94, 0, 0]]
+    }, 
+    {
+      "op": "Concat", 
+      "name": "concat14", 
+      "attrs": {"num_args": "2"}, 
+      "inputs": [[86, 0, 0], [95, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "convolution29_weight", 
+      "attrs": {
+        "kernel": "(1, 1)", 
+        "num_filter": "80", 
+        "pad": "(0, 0)", 
+        "stride": "(1, 1)", 
+        "workspace": "256"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "convolution29_bias", 
+      "attrs": {
+        "kernel": "(1, 1)", 
+        "num_filter": "80", 
+        "pad": "(0, 0)", 
+        "stride": "(1, 1)", 
+        "workspace": "256"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "Convolution", 
+      "name": "convolution29", 
+      "attrs": {
+        "kernel": "(1, 1)", 
+        "num_filter": "80", 
+        "pad": "(0, 0)", 
+        "stride": "(1, 1)", 
+        "workspace": "256"
+      }, 
+      "inputs": [[96, 0, 0], [97, 0, 0], [98, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "batchnorm29_gamma", 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "batchnorm29_beta", 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "batchnorm29_moving_mean", 
+      "attrs": {"__init__": "[\"zero\", {}]"}, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "batchnorm29_moving_var", 
+      "attrs": {"__init__": "[\"one\", {}]"}, 
+      "inputs": []
+    }, 
+    {
+      "op": "BatchNorm", 
+      "name": "batchnorm29", 
+      "inputs": [[99, 0, 0], [100, 0, 0], [101, 0, 0], [102, 0, 1], [103, 0, 1]]
+    }, 
+    {
+      "op": "Activation", 
+      "name": "activation29", 
+      "attrs": {"act_type": "relu"}, 
+      "inputs": [[104, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "convolution30_weight", 
+      "attrs": {
+        "kernel": "(3, 3)", 
+        "num_filter": "80", 
+        "pad": "(1, 1)", 
+        "stride": "(1, 1)", 
+        "workspace": "256"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "convolution30_bias", 
+      "attrs": {
+        "kernel": "(3, 3)", 
+        "num_filter": "80", 
+        "pad": "(1, 1)", 
+        "stride": "(1, 1)", 
+        "workspace": "256"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "Convolution", 
+      "name": "convolution30", 
+      "attrs": {
+        "kernel": "(3, 3)", 
+        "num_filter": "80", 
+        "pad": "(1, 1)", 
+        "stride": "(1, 1)", 
+        "workspace": "256"
+      }, 
+      "inputs": [[96, 0, 0], [106, 0, 0], [107, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "batchnorm30_gamma", 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "batchnorm30_beta", 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "batchnorm30_moving_mean", 
+      "attrs": {"__init__": "[\"zero\", {}]"}, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "batchnorm30_moving_var", 
+      "attrs": {"__init__": "[\"one\", {}]"}, 
+      "inputs": []
+    }, 
+    {
+      "op": "BatchNorm", 
+      "name": "batchnorm30", 
+      "inputs": [[108, 0, 0], [109, 0, 0], [110, 0, 0], [111, 0, 1], [112, 0, 1]]
+    }, 
+    {
+      "op": "Activation", 
+      "name": "activation30", 
+      "attrs": {"act_type": "relu"}, 
+      "inputs": [[113, 0, 0]]
+    }, 
+    {
+      "op": "Concat", 
+      "name": "concat15", 
+      "attrs": {"num_args": "2"}, 
+      "inputs": [[105, 0, 0], [114, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "convolution31_weight", 
+      "attrs": {
+        "kernel": "(1, 1)", 
+        "num_filter": "48", 
+        "pad": "(0, 0)", 
+        "stride": "(1, 1)", 
+        "workspace": "256"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "convolution31_bias", 
+      "attrs": {
+        "kernel": "(1, 1)", 
+        "num_filter": "48", 
+        "pad": "(0, 0)", 
+        "stride": "(1, 1)", 
+        "workspace": "256"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "Convolution", 
+      "name": "convolution31", 
+      "attrs": {
+        "kernel": "(1, 1)", 
+        "num_filter": "48", 
+        "pad": "(0, 0)", 
+        "stride": "(1, 1)", 
+        "workspace": "256"
+      }, 
+      "inputs": [[115, 0, 0], [116, 0, 0], [117, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "batchnorm31_gamma", 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "batchnorm31_beta", 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "batchnorm31_moving_mean", 
+      "attrs": {"__init__": "[\"zero\", {}]"}, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "batchnorm31_moving_var", 
+      "attrs": {"__init__": "[\"one\", {}]"}, 
+      "inputs": []
+    }, 
+    {
+      "op": "BatchNorm", 
+      "name": "batchnorm31", 
+      "inputs": [[118, 0, 0], [119, 0, 0], [120, 0, 0], [121, 0, 1], [122, 0, 1]]
+    }, 
+    {
+      "op": "Activation", 
+      "name": "activation31", 
+      "attrs": {"act_type": "relu"}, 
+      "inputs": [[123, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "convolution32_weight", 
+      "attrs": {
+        "kernel": "(3, 3)", 
+        "num_filter": "96", 
+        "pad": "(1, 1)", 
+        "stride": "(1, 1)", 
+        "workspace": "256"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "convolution32_bias", 
+      "attrs": {
+        "kernel": "(3, 3)", 
+        "num_filter": "96", 
+        "pad": "(1, 1)", 
+        "stride": "(1, 1)", 
+        "workspace": "256"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "Convolution", 
+      "name": "convolution32", 
+      "attrs": {
+        "kernel": "(3, 3)", 
+        "num_filter": "96", 
+        "pad": "(1, 1)", 
+        "stride": "(1, 1)", 
+        "workspace": "256"
+      }, 
+      "inputs": [[115, 0, 0], [125, 0, 0], [126, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "batchnorm32_gamma", 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "batchnorm32_beta", 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "batchnorm32_moving_mean", 
+      "attrs": {"__init__": "[\"zero\", {}]"}, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "batchnorm32_moving_var", 
+      "attrs": {"__init__": "[\"one\", {}]"}, 
+      "inputs": []
+    }, 
+    {
+      "op": "BatchNorm", 
+      "name": "batchnorm32", 
+      "inputs": [[127, 0, 0], [128, 0, 0], [129, 0, 0], [130, 0, 1], [131, 0, 1]]
+    }, 
+    {
+      "op": "Activation", 
+      "name": "activation32", 
+      "attrs": {"act_type": "relu"}, 
+      "inputs": [[132, 0, 0]]
+    }, 
+    {
+      "op": "Concat", 
+      "name": "concat16", 
+      "attrs": {"num_args": "2"}, 
+      "inputs": [[124, 0, 0], [133, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "convolution33_weight", 
+      "attrs": {
+        "kernel": "(3, 3)", 
+        "num_filter": "96", 
+        "pad": "(1, 1)", 
+        "stride": "(2, 2)", 
+        "workspace": "256"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "convolution33_bias", 
+      "attrs": {
+        "kernel": "(3, 3)", 
+        "num_filter": "96", 
+        "pad": "(1, 1)", 
+        "stride": "(2, 2)", 
+        "workspace": "256"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "Convolution", 
+      "name": "convolution33", 
+      "attrs": {
+        "kernel": "(3, 3)", 
+        "num_filter": "96", 
+        "pad": "(1, 1)", 
+        "stride": "(2, 2)", 
+        "workspace": "256"
+      }, 
+      "inputs": [[134, 0, 0], [135, 0, 0], [136, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "batchnorm33_gamma", 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "batchnorm33_beta", 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "batchnorm33_moving_mean", 
+      "attrs": {"__init__": "[\"zero\", {}]"}, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "batchnorm33_moving_var", 
+      "attrs": {"__init__": "[\"one\", {}]"}, 
+      "inputs": []
+    }, 
+    {
+      "op": "BatchNorm", 
+      "name": "batchnorm33", 
+      "inputs": [[137, 0, 0], [138, 0, 0], [139, 0, 0], [140, 0, 1], [141, 0, 1]]
+    }, 
+    {
+      "op": "Activation", 
+      "name": "activation33", 
+      "attrs": {"act_type": "relu"}, 
+      "inputs": [[142, 0, 0]]
+    }, 
+    {
+      "op": "Pooling", 
+      "name": "pooling3", 
+      "attrs": {
+        "kernel": "(3, 3)", 
+        "pad": "(1, 1)", 
+        "pool_type": "max", 
+        "stride": "(2, 2)"
+      }, 
+      "inputs": [[134, 0, 0]]
+    }, 
+    {
+      "op": "Concat", 
+      "name": "concat17", 
+      "attrs": {"num_args": "2"}, 
+      "inputs": [[143, 0, 0], [144, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "convolution34_weight", 
+      "attrs": {
+        "kernel": "(1, 1)", 
+        "num_filter": "176", 
+        "pad": "(0, 0)", 
+        "stride": "(1, 1)", 
+        "workspace": "256"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "convolution34_bias", 
+      "attrs": {
+        "kernel": "(1, 1)", 
+        "num_filter": "176", 
+        "pad": "(0, 0)", 
+        "stride": "(1, 1)", 
+        "workspace": "256"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "Convolution", 
+      "name": "convolution34", 
+      "attrs": {
+        "kernel": "(1, 1)", 
+        "num_filter": "176", 
+        "pad": "(0, 0)", 
+        "stride": "(1, 1)", 
+        "workspace": "256"
+      }, 
+      "inputs": [[145, 0, 0], [146, 0, 0], [147, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "batchnorm34_gamma", 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "batchnorm34_beta", 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "batchnorm34_moving_mean", 
+      "attrs": {"__init__": "[\"zero\", {}]"}, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "batchnorm34_moving_var", 
+      "attrs": {"__init__": "[\"one\", {}]"}, 
+      "inputs": []
+    }, 
+    {
+      "op": "BatchNorm", 
+      "name": "batchnorm34", 
+      "inputs": [[148, 0, 0], [149, 0, 0], [150, 0, 0], [151, 0, 1], [152, 0, 1]]
+    }, 
+    {
+      "op": "Activation", 
+      "name": "activation34", 
+      "attrs": {"act_type": "relu"}, 
+      "inputs": [[153, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "convolution35_weight", 
+      "attrs": {
+        "kernel": "(3, 3)", 
+        "num_filter": "160", 
+        "pad": "(1, 1)", 
+        "stride": "(1, 1)", 
+        "workspace": "256"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "convolution35_bias", 
+      "attrs": {
+        "kernel": "(3, 3)", 
+        "num_filter": "160", 
+        "pad": "(1, 1)", 
+        "stride": "(1, 1)", 
+        "workspace": "256"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "Convolution", 
+      "name": "convolution35", 
+      "attrs": {
+        "kernel": "(3, 3)", 
+        "num_filter": "160", 
+        "pad": "(1, 1)", 
+        "stride": "(1, 1)", 
+        "workspace": "256"
+      }, 
+      "inputs": [[145, 0, 0], [155, 0, 0], [156, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "batchnorm35_gamma", 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "batchnorm35_beta", 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "batchnorm35_moving_mean", 
+      "attrs": {"__init__": "[\"zero\", {}]"}, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "batchnorm35_moving_var", 
+      "attrs": {"__init__": "[\"one\", {}]"}, 
+      "inputs": []
+    }, 
+    {
+      "op": "BatchNorm", 
+      "name": "batchnorm35", 
+      "inputs": [[157, 0, 0], [158, 0, 0], [159, 0, 0], [160, 0, 1], [161, 0, 1]]
+    }, 
+    {
+      "op": "Activation", 
+      "name": "activation35", 
+      "attrs": {"act_type": "relu"}, 
+      "inputs": [[162, 0, 0]]
+    }, 
+    {
+      "op": "Concat", 
+      "name": "concat18", 
+      "attrs": {"num_args": "2"}, 
+      "inputs": [[154, 0, 0], [163, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "convolution36_weight", 
+      "attrs": {
+        "kernel": "(1, 1)", 
+        "num_filter": "176", 
+        "pad": "(0, 0)", 
+        "stride": "(1, 1)", 
+        "workspace": "256"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "convolution36_bias", 
+      "attrs": {
+        "kernel": "(1, 1)", 
+        "num_filter": "176", 
+        "pad": "(0, 0)", 
+        "stride": "(1, 1)", 
+        "workspace": "256"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "Convolution", 
+      "name": "convolution36", 
+      "attrs": {
+        "kernel": "(1, 1)", 
+        "num_filter": "176", 
+        "pad": "(0, 0)", 
+        "stride": "(1, 1)", 
+        "workspace": "256"
+      }, 
+      "inputs": [[164, 0, 0], [165, 0, 0], [166, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "batchnorm36_gamma", 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "batchnorm36_beta", 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "batchnorm36_moving_mean", 
+      "attrs": {"__init__": "[\"zero\", {}]"}, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "batchnorm36_moving_var", 
+      "attrs": {"__init__": "[\"one\", {}]"}, 
+      "inputs": []
+    }, 
+    {
+      "op": "BatchNorm", 
+      "name": "batchnorm36", 
+      "inputs": [[167, 0, 0], [168, 0, 0], [169, 0, 0], [170, 0, 1], [171, 0, 1]]
+    }, 
+    {
+      "op": "Activation", 
+      "name": "activation36", 
+      "attrs": {"act_type": "relu"}, 
+      "inputs": [[172, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "convolution37_weight", 
+      "attrs": {
+        "kernel": "(3, 3)", 
+        "num_filter": "160", 
+        "pad": "(1, 1)", 
+        "stride": "(1, 1)", 
+        "workspace": "256"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "convolution37_bias", 
+      "attrs": {
+        "kernel": "(3, 3)", 
+        "num_filter": "160", 
+        "pad": "(1, 1)", 
+        "stride": "(1, 1)", 
+        "workspace": "256"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "Convolution", 
+      "name": "convolution37", 
+      "attrs": {
+        "kernel": "(3, 3)", 
+        "num_filter": "160", 
+        "pad": "(1, 1)", 
+        "stride": "(1, 1)", 
+        "workspace": "256"
+      }, 
+      "inputs": [[164, 0, 0], [174, 0, 0], [175, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "batchnorm37_gamma", 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "batchnorm37_beta", 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "batchnorm37_moving_mean", 
+      "attrs": {"__init__": "[\"zero\", {}]"}, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "batchnorm37_moving_var", 
+      "attrs": {"__init__": "[\"one\", {}]"}, 
+      "inputs": []
+    }, 
+    {
+      "op": "BatchNorm", 
+      "name": "batchnorm37", 
+      "inputs": [[176, 0, 0], [177, 0, 0], [178, 0, 0], [179, 0, 1], [180, 0, 1]]
+    }, 
+    {
+      "op": "Activation", 
+      "name": "activation37", 
+      "attrs": {"act_type": "relu"}, 
+      "inputs": [[181, 0, 0]]
+    }, 
+    {
+      "op": "Concat", 
+      "name": "concat19", 
+      "attrs": {"num_args": "2"}, 
+      "inputs": [[173, 0, 0], [182, 0, 0]]
+    }, 
+    {
+      "op": "Pooling", 
+      "name": "global_pool", 
+      "attrs": {
+        "kernel": "(7, 7)", 
+        "pool_type": "avg"
+      }, 
+      "inputs": [[183, 0, 0]]
+    }, 
+    {
+      "op": "Flatten", 
+      "name": "flatten1", 
+      "inputs": [[184, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "fc0_weight", 
+      "attrs": {"num_hidden": "10"}, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "fc0_bias", 
+      "attrs": {"num_hidden": "10"}, 
+      "inputs": []
+    }, 
+    {
+      "op": "FullyConnected", 
+      "name": "fc0", 
+      "attrs": {"num_hidden": "10"}, 
+      "inputs": [[185, 0, 0], [186, 0, 0], [187, 0, 0]]
+    }, 
+    {
+      "op": "Activation", 
+      "name": "relu0", 
+      "attrs": {"act_type": "relu"}, 
+      "inputs": [[188, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "fc1_weight", 
+      "attrs": {"num_hidden": "2"}, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "fc1_bias", 
+      "attrs": {"num_hidden": "2"}, 
+      "inputs": []
+    }, 
+    {
+      "op": "FullyConnected", 
+      "name": "fc1", 
+      "attrs": {"num_hidden": "2"}, 
+      "inputs": [[189, 0, 0], [190, 0, 0], [191, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "svm_label", 
+      "inputs": []
+    }, 
+    {
+      "op": "SVMOutput", 
+      "name": "svm", 
+      "inputs": [[192, 0, 0], [193, 0, 0]]
+    }
+  ], 
+  "arg_nodes": [
+    0, 
+    1, 
+    2, 
+    4, 
+    5, 
+    6, 
+    7, 
+    10, 
+    11, 
+    13, 
+    14, 
+    15, 
+    16, 
+    19, 
+    20, 
+    22, 
+    23, 
+    24, 
+    25, 
+    29, 
+    30, 
+    32, 
+    33, 
+    34, 
+    35, 
+    38, 
+    39, 
+    41, 
+    42, 
+    43, 
+    44, 
+    48, 
+    49, 
+    51, 
+    52, 
+    53, 
+    54, 
+    59, 
+    60, 
+    62, 
+    63, 
+    64, 
+    65, 
+    68, 
+    69, 
+    71, 
+    72, 
+    73, 
+    74, 
+    78, 
+    79, 
+    81, 
+    82, 
+    83, 
+    84, 
+    87, 
+    88, 
+    90, 
+    91, 
+    92, 
+    93, 
+    97, 
+    98, 
+    100, 
+    101, 
+    102, 
+    103, 
+    106, 
+    107, 
+    109, 
+    110, 
+    111, 
+    112, 
+    116, 
+    117, 
+    119, 
+    120, 
+    121, 
+    122, 
+    125, 
+    126, 
+    128, 
+    129, 
+    130, 
+    131, 
+    135, 
+    136, 
+    138, 
+    139, 
+    140, 
+    141, 
+    146, 
+    147, 
+    149, 
+    150, 
+    151, 
+    152, 
+    155, 
+    156, 
+    158, 
+    159, 
+    160, 
+    161, 
+    165, 
+    166, 
+    168, 
+    169, 
+    170, 
+    171, 
+    174, 
+    175, 
+    177, 
+    178, 
+    179, 
+    180, 
+    186, 
+    187, 
+    190, 
+    191, 
+    193
+  ], 
+  "node_row_ptr": [
+    0, 
+    1, 
+    2, 
+    3, 
+    4, 
+    5, 
+    6, 
+    7, 
+    8, 
+    11, 
+    12, 
+    13, 
+    14, 
+    15, 
+    16, 
+    17, 
+    18, 
+    19, 
+    22, 
+    23, 
+    24, 
+    25, 
+    26, 
+    27, 
+    28, 
+    29, 
+    30, 
+    33, 
+    34, 
+    35, 
+    36, 
+    37, 
+    38, 
+    39, 
+    40, 
+    41, 
+    42, 
+    45, 
+    46, 
+    47, 
+    48, 
+    49, 
+    50, 
+    51, 
+    52, 
+    53, 
+    56, 
+    57, 
+    58, 
+    59, 
+    60, 
+    61, 
+    62, 
+    63, 
+    64, 
+    65, 
+    68, 
+    69, 
+    70, 
+    71, 
+    72, 
+    73, 
+    74, 
+    75, 
+    76, 
+    77, 
+    78, 
+    81, 
+    82, 
+    83, 
+    84, 
+    85, 
+    86, 
+    87, 
+    88, 
+    89, 
+    92, 
+    93, 
+    94, 
+    95, 
+    96, 
+    97, 
+    98, 
+    99, 
+    100, 
+    101, 
+    104, 
+    105, 
+    106, 
+    107, 
+    108, 
+    109, 
+    110, 
+    111, 
+    112, 
+    115, 
+    116, 
+    117, 
+    118, 
+    119, 
+    120, 
+    121, 
+    122, 
+    123, 
+    124, 
+    127, 
+    128, 
+    129, 
+    130, 
+    131, 
+    132, 
+    133, 
+    134, 
+    135, 
+    138, 
+    139, 
+    140, 
+    141, 
+    142, 
+    143, 
+    144, 
+    145, 
+    146, 
+    147, 
+    150, 
+    151, 
+    152, 
+    153, 
+    154, 
+    155, 
+    156, 
+    157, 
+    158, 
+    161, 
+    162, 
+    163, 
+    164, 
+    165, 
+    166, 
+    167, 
+    168, 
+    169, 
+    170, 
+    173, 
+    174, 
+    175, 
+    176, 
+    177, 
+    178, 
+    179, 
+    180, 
+    181, 
+    182, 
+    183, 
+    186, 
+    187, 
+    188, 
+    189, 
+    190, 
+    191, 
+    192, 
+    193, 
+    194, 
+    197, 
+    198, 
+    199, 
+    200, 
+    201, 
+    202, 
+    203, 
+    204, 
+    205, 
+    206, 
+    209, 
+    210, 
+    211, 
+    212, 
+    213, 
+    214, 
+    215, 
+    216, 
+    217, 
+    220, 
+    221, 
+    222, 
+    223, 
+    224, 
+    225, 
+    226, 
+    227, 
+    228, 
+    229, 
+    230, 
+    231, 
+    232, 
+    233
+  ], 
+  "heads": [[194, 0, 0]], 
+  "attrs": {"mxnet_version": ["int", 10100]}
+}
