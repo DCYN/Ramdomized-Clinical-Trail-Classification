@@ -1,0 +1,9 @@
+digraph plot {
+	data [label=data fillcolor="#8dd3c7" fixedsize=true height=0.8034 shape=oval style=filled width=1.3]
+	fc [label="FullyConnected\n2" fillcolor="#fb8072" fixedsize=true height=0.8034 shape=box style=filled width=1.3]
+	svm_label [label=svm_label fillcolor="#8dd3c7" fixedsize=true height=0.8034 shape=oval style=filled width=1.3]
+	svm [label=svm fillcolor="#fccde5" fixedsize=true height=0.8034 shape=box style=filled width=1.3]
+	fc -> data [label="1x16x16" arrowtail=open dir=back]
+	svm -> fc [label=2 arrowtail=open dir=back]
+	svm -> svm_label [label="" arrowtail=open dir=back]
+}
